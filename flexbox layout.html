@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      height: 100vh;           /* full screen height */
+      background-color: #d9e2da;
+    }
+    .box {
+      background: rgb(5, 96, 126);
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      text-align: center;
+      flex: 1; /* each box takes equal space */
+    }
+    .box:nth-child(2) {
+      background: rgb(188, 228, 11); /* different color for second box */
+    }
+  </style>
+</head>
+<body>
+    <h2 style="text-align:center; color:rgb(228, 21, 21); margin-top:20px;">
+    Flexbox Layout
+  </h2>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+</body>
+</html>

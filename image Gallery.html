@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Example</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 120px;
+      margin: 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(8, 77, 122, 0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; color:rgb(214, 13, 171);">My Image Gallery</h2>
+  <div class="gallery">
+</html>
+     <img src="images/cake.png" alt="Photo 1">
+    <img src="images/cloud.jpg" alt="Photo 2">
+    <img src="images/dog.jpg" alt="Photo 3">
+    <img src="images/nature.jpg" alt="Photo 4">
+    <img src="images/shinchan.webp" alt="Photo 5">
+  </div>
+</body>
+</html>

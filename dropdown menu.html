@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu Example</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      background-color: darkblue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      min-width: 120px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .menu p {
+      margin: 0;
+      padding: 10px;
+      cursor: pointer;
+      color: #333;
+    }
+    .menu p:hover {
+      background-color: lightgray;
+    }
+    .dropdown:hover .menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; color:darkblue; margin-top:20px;">
+    Dropdown Menu
+  </h2>
+  <div class="dropdown">
+    Menu
+    <div class="menu">
+      <p>Item 1</p>
+      <p>Item 2</p>
+      <p>Item 3</p>
+    </div>
+  </div>
+</body>
+</html>
