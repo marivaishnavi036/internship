@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Tech Stack</title>
+    <style>
+        body {
+            background:purple;
+            font-family: Arial, sans-serif;
+            color:rgb(14, 13, 13);
+            margin: 2px;
+            padding: 30px;
+        }
+         h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color:wheat;
+            text-decoration:underline;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+
+        .tab {
+            padding: 12px 25px;
+            background:lightpink;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .tab.active {
+            background: #b54dd4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background:lavenderblush;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translate(-5px);
+            box-shadow: 0 0px 15px #b11e91;
+        }
+
+        .card img {
+            width: 100px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 25px;
+            margin: 10px 0;
+            color: rgb(46, 14, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My <span>Tech Stack</span></h1>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active">All (25)</div>
+        <div class="tab">Languages (7)</div>
+        <div class="tab">Tools (8)</div>
+        <div class="tab">Libraries (5)</div>
+        <div class="tab">Databases (4)</div>
+    </div>
+    <div class="container">
+        <div class="card">
+           <img src="Images/C.jpg">
+            <h2>C</h2>
+        </div>
+        <div class="card">
+            <img src="Images/c++.jpg">
+            <h2>C++</h2>
+        </div>
+        <div class="card">
+            <img src="Images/pyt.jpg">
+            <h2>Python</h2>
+        </div>
+        <div class="card">
+            <img src="Images/java.jpg">
+            <h2>Java</h2>
+        </div>
+        <div class="card">
+            <img src="Images/html.jpg">
+            <h2>HTML</h2>
+        </div>
+        <div class="card">
+            <img src="Images/css.jpg">
+            <h2>CSS</h2>
+        </div>
+        <div class="card">
+            <img src="Images/react.jpg">
+            <h2>React</h2>
+        </div>
+        <div class="card">
+            <img src="Images/sql.jpg">
+            <h2>MySQL</h2>
+        </div>
+    </div>
+</body>
+
+</html>
